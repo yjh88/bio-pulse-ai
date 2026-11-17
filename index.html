@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bio-Pulse AI | 바이오·매크로 뉴스 심리 분석기</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- 상단 네비게이션 메뉴 (3개 섹션 이동) -->
+  <header class="navbar">
+    <div class="logo">Bio-Pulse AI</div>
+    <nav>
+      <a href="#home">서비스 소개</a>
+      <a href="#analyzer">AI 뉴스 분석기</a>
+      <a href="#guide">투자 유의사항</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <!-- 섹션 1: 서비스 소개 -->
+    <section id="home" class="card hero">
+      <h1>제약·바이오 및 매크로 뉴스<br>AI 투자 심리 분석기</h1>
+      <p>복잡한 임상 결과, 영문 FDA 공시, 거시경제 뉴스를 입력하면 AI가 호재·악재 여부와 핵심 요인을 3줄로 요약해 드립니다.</p>
+      <a href="#analyzer" class="btn-primary">지금 바로 분석하기</a>
+    </section>
+
+    <!-- 섹션 2: AI 뉴스 분석기 (핵심 기능) -->
+    <section id="analyzer" class="card">
+      <h2>AI 뉴스·공시 분석</h2>
+      <p class="sub-text">분석할 종목명과 뉴스 기사 또는 공시 원문을 아래에 붙여넣어 주세요.</p>
+      
+      <div class="form-group">
+        <label for="stockName">관심 종목 / 키워드 (선택)</label>
+        <input type="text" id="stockName" placeholder="예: 알테오젠, 한미약품, 미국 금리 등">
+      </div>
+
+      <div class="form-group">
+        <label for="newsText">뉴스 기사 또는 공시 원문 (필수)</label>
+        <textarea id="newsText" rows="6" placeholder="여기에 뉴스 본문이나 영문 초록/공시 내용을 붙여넣으세요..."></textarea>
+      </div>
+
+      <button id="analyzeBtn" class="btn-submit">AI 심리 분석 실행</button>
+
+      <!-- 상태 및 오류 메시지 표시 영역 -->
+      <div id="statusMessage" class="status-msg hidden"></div>
+
+      <!-- AI 결과 출력 영역 -->
+      <div id="resultBox" class="result-box hidden">
+        <h3>분석 결과</h3>
+        <div id="resultContent"></div>
+      </div>
+    </section>
+
+    <!-- 섹션 3: 투자 유의사항 및 FAQ -->
+    <section id="guide
