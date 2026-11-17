@@ -3,7 +3,7 @@
 ## 1. 서비스 소개
 복잡한 제약·바이오 임상 결과, 영문 FDA 공시, 거시경제 뉴스를 입력하면 Gemini AI가 객관적으로 분석하여 **투자 심리(호재/악재/중립)**와 **핵심 요인 3줄 요약**, **리스크 요인**을 도출해 주는 웹 서비스입니다.
 
-* **배포 URL:** (6단계 Vercel 배포 완료 후 여기에 주소를 붙여넣으세요)
+* **배포 URL:** ([https://bio-pulse-ai.vercel.app](https://bio-pulse-ai.vercel.app))
 
 ## 2. 기술 스택
 * **Frontend:** HTML5, CSS3 (반응형 웹 디자인), Vanilla JavaScript (`fetch` API)
