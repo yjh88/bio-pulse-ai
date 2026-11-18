@@ -1,3 +1,4 @@
+<img width="649" height="821" alt="bio" src="https://github.com/user-attachments/assets/3273eca0-24a8-4d16-869f-92e3fe3a94c8" />
 # Bio-Pulse AI (바이오·매크로 뉴스 투자 심리 분석기)
 
 ## 1. 서비스 소개
@@ -49,3 +50,9 @@ bio-pulse-ai/
 * **실패 처리 기준:**
   * 빈 입력(필수값 누락): `"필수값을 입력하세요: 분석할 뉴스 기사나 공시 원문을 입력해야 합니다."` 안내 문구 표시
   * API/서버 오류(4xx/5xx): `"오류 안내: 서버 오류가 발생했습니다."` 에러 메시지 표시
+
+
+
+
+<img width="649" height="821" alt="bio" src="https://github.com/user-attachments/assets/24080a8d-cdd8-4152-bdda-d45da30efdf6" />
+
