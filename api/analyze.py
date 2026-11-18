@@ -39,7 +39,8 @@ class handler(BaseHTTPRequestHandler):
 [원문 텍스트]
 {news_text}"""
 
-      url = url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-3.8-flash:generateContent?key={api_key}"
+      url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key={api_key}"
+      payload = {"contents": [{"parts": [{"text": prompt}]}]}
 
       req = urllib.request.Request(
           url,
@@ -48,7 +49,7 @@ class handler(BaseHTTPRequestHandler):
           method="POST",
       )
 
-      with urllib.request.urlopen(req, timeout=12) as resp:
+      with urllib.request.urlopen(req, timeout=15) as resp:
         res_data = json.loads(resp.read().decode("utf-8"))
         ai_text = res_data["candidates"][0]["content"]["parts"][0]["text"]
 
