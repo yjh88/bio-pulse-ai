@@ -39,7 +39,8 @@ class handler(BaseHTTPRequestHandler):
 [원문 텍스트]
 {news_text}"""
 
-      url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key={api_key}"
+      # 최신 모델명으로 수정 완료
+      url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-3.8-flash:generateContent?key={api_key}"
       payload = {"contents": [{"parts": [{"text": prompt}]}]}
 
       req = urllib.request.Request(
